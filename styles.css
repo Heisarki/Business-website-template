@@ -168,6 +168,13 @@ p2 {
     padding: 20px;
 }
 
+.pricing-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .card-container {
     margin: 20px;
     display: flex;
