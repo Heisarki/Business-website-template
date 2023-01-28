@@ -1,5 +1,5 @@
 *{
-    /* transition: 1s; */
+    transition: 0.5s;
     text-decoration: none;
     list-style: none;
     margin: 0;
@@ -58,6 +58,12 @@ p2 {
     border-radius: 2px;
 }
 
+.top img:hover {
+    transform: translate(1px, 1px);
+    background-color: #2596be;
+    /* border: 1px solid #2596be; */
+}
+
 /* Header */
 .header-container {
     display: flex;
@@ -94,6 +100,7 @@ p2 {
 /* Hero */
 
 .hero-container {
+    background-color: #eee;
     position: relative;
     text-align: start;
 }
@@ -112,6 +119,39 @@ p2 {
     color: white; 
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
+}
+
+/* Services Availalbe */
+.services-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+.services-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #eee; */
+    width: 300px;
+    height: 150px;
+    margin: 50px;
+}
+.services-card img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    /* height: 200px; */
+    object-fit: cover;
+}
+
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Pricing */
@@ -188,7 +228,7 @@ p2 {
     border-top: 1px solid #eee;
     display: flex;
     flex-wrap: wrap;
-    
+    background-color: #eee;
     color: black;
     justify-content: space-evenly;
     align-items: center;
@@ -208,8 +248,13 @@ p2 {
 .recent-posts a {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    border-top: 1px solid #eee;
+    /* margin-bottom: 10px; */
+    border-top: 1px solid rgb(196, 193, 193);
+}
+
+.recent-posts a:hover {
+   color: rgb(110, 150, 226);
+   transform: translate(1px, 1px);
 }
 
 .subscribe-form {
@@ -236,7 +281,7 @@ button {
     color: white;
 }
 button:hover {
-    padding: 6px;
+    transform: translate(2px);
 }
 input {
     padding: 8px;
@@ -342,5 +387,12 @@ label {
 
     .form-container form {
         width: 80vw;
+    }
+    .services-card {
+        margin: 0;
+    }
+    .pricing-description {
+        /* margin: 0 5vw 0 5vw; */
+        margin: 0;
     }
   }
