@@ -1,0 +1,346 @@
+*{
+    /* transition: 1s; */
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Lato","Helvetica Neue",Helvetica,sans-serif;
+     */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    color: grey;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+p {
+    font-size: 16px;
+}
+
+p2 {
+    font-size: 14px;
+}
+
+.pad-5 {
+    padding: 5px;
+}
+.pad-10 {
+    padding: 10px;
+}
+
+/*  */
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: black;
+}
+.top img{
+    width: 20px;
+    margin: 5px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #eee;
+    min-height: 100px;
+    padding: 0 50px 0 50px;
+}
+
+.logo {
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+    padding: 5px;
+    border-radius: 0px 20px 20px 0;   
+}
+.logo h1 {
+    font-family: 'Brush Script MT', cursive;
+}
+
+.nav-link {
+    display: flex;
+}
+
+.nav-link a {
+    margin: 10px;
+}
+
+/* Body */
+.body-container {
+    margin-top: 100px;
+}
+
+/* Hero */
+
+.hero-container {
+    position: relative;
+    text-align: start;
+}
+.hero-container img{
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    /* opacity: 0.5; */
+}
+
+.comapny-description {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    margin-left: 50px;
+    color: white; 
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+/* Pricing */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 10px;
+}
+.pricing-description {
+    margin: 0 20vw 0 20vw;
+    padding: 20px;
+}
+
+.card-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 0 5px grey;
+    /* border: 1px solid #eee; */
+    border-radius: 10px;
+}
+
+.card-container p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50px;
+    border-bottom: 1px solid #eee;
+
+}
+
+/* Reviews */
+.reviews-container {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.reviews-container button {
+    background-color: black;
+    color: white;
+    border: 1px solid #eee;
+}
+.reviews {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 60vw;
+}
+
+.reviews img {
+    /* border: 1px solid white; */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+/* Footer */
+
+.footer-container {
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    
+    color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-us {
+    width: 250px;
+    margin: 20px;
+}
+
+.recent-posts {
+    width: 250px;
+    margin: 20px;
+
+}
+.recent-posts a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-top: 1px solid #eee;
+}
+
+.subscribe-form {
+    width: 250px;
+    margin: 20px;
+
+}
+
+.email-input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* TextField, TextArea, Button style */
+button {
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+button:hover {
+    padding: 6px;
+}
+input {
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    
+}
+textarea {
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+
+
+}
+label {
+    cursor: text;
+}
+
+/* Copyright */
+
+.copyright {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 5px 10px 0 0;
+}
+
+.copyright p{
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 11px;
+}
+
+
+/* Styles for Contact form page */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 100vw;
+    min-height: 65vh;
+    /* background-color: green; */
+    
+}
+
+.form-container form {
+    border: 1px solid #eee;
+    border-radius: 5px;
+
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+/* 920px device */
+@media only screen and (max-width: 920px) {
+    
+    .footer-container {
+        flex-direction: column;
+    }
+    .about-us {
+        width: 60vw;
+    }
+    .recent-posts {
+        width: 60vw;
+    }
+    .subscribe-form {
+        width: 60vw;
+    }
+
+    .form-container form {
+        width: 70vw;
+    }
+  }
+  
+ /* 600 pixel and less */
+  @media only screen and (max-width: 600px) {
+    
+    .footer-container {
+        flex-direction: column;
+    }
+    .about-us {
+        width: 70vw;
+    }
+    .recent-posts {
+        width: 70vw;
+    }
+    .subscribe-form {
+        width: 70vw;
+    }
+
+    .form-container form {
+        width: 80vw;
+    }
+  }
