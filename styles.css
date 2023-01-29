@@ -91,7 +91,7 @@ p2 {
 
 .nav-link a {
     display: flex;
-    width: 100vw;
+
     padding: 5px;
     /* background-color: green; */
     /* color:rgb(153, 153, 153); */
@@ -433,6 +433,9 @@ label {
         border: 1px solid white;
         border-radius: 5px;
     }
+    .nav-link a {
+        width: 100vw;
+    }
     .nav-link li {
         padding: 10px;
         border-top: 1px solid white;
@@ -472,6 +475,9 @@ label {
         width: 100vw;
         border: 1px solid white;
         border-radius: 5px;
+    }
+    .nav-link a {
+        width: 100vw;
     }
     .nav-link li {
         padding: 10px;
