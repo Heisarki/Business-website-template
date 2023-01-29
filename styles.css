@@ -40,8 +40,9 @@ p2 {
     width: 100%;
     background-color: white;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     border-bottom: 1px solid #eee;
+    
 }
 
 .top {
@@ -90,6 +91,41 @@ p2 {
 
 .nav-link a {
     margin: 10px;
+    /* color:rgb(153, 153, 153); */
+    color: black;
+}
+.nav-link li:hover {
+    transform: translate(2px);
+}
+.nav-link li:focus {
+    transform: translate(2px);
+}
+/* Mobile view */
+.mobile {
+    display: none;
+    width: 30px;
+    height: 30px;
+    /* background-color: green; */
+    flex-direction: column;
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+}
+.bar {
+    display: flex;
+    width: 30px;
+    height: 5px;
+    margin-top: 3px;
+    background-color: rgb(153, 153, 153);
+}
+
+.x-button {
+    display: none;
+}
+
+.x-button {
+    font-size: 50px;
+    font-weight: 700;
+    transform: rotate(135deg);
 }
 
 /* Body */
@@ -196,6 +232,14 @@ p2 {
 
 }
 
+.tier {
+    font-size: 18px;
+    font-weight: 400;
+}
+.prices {
+    color: rgb(139, 139, 139);
+}
+
 /* Reviews */
 .reviews-container {
     display: flex;
@@ -220,6 +264,10 @@ p2 {
     width: 60vw;
 }
 
+.reviews h1 {
+    margin-bottom: 20px;
+}
+
 .reviews img {
     /* border: 1px solid white; */
     width: 70px;
@@ -227,6 +275,20 @@ p2 {
     border-radius: 50%;
     object-fit: cover;
     
+}
+.review-list {
+    width: 60vw;
+    display: flex;
+    overflow-x: scroll;
+    /* background-color: blue; */
+}
+.width {
+    flex-shrink: 0;
+    width: 60vw;
+}
+
+button {
+    z-index: 999;
 }
 
 /* Footer */
@@ -357,6 +419,26 @@ label {
 
 /* 920px device */
 @media only screen and (max-width: 920px) {
+
+    .nav-link {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 140px;
+        background-color: #eee;
+        width: 100vw;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .nav-link li {
+        padding: 10px;
+        border-top: 1px solid white;
+        width: 100%;
+    }
+
+    .mobile {
+        display: flex;
+    }
     
     .footer-container {
         flex-direction: column;
@@ -378,6 +460,26 @@ label {
   
  /* 600 pixel and less */
   @media only screen and (max-width: 600px) {
+    .nav-link {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 140px;
+        background-color: #eee;
+        width: 100vw;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .nav-link li {
+        padding: 10px;
+        border-top: 1px solid white;
+        /* background-color: black; */
+        width: 100%;
+    }
+
+    .mobile {
+        display: flex;
+    }
     
     .footer-container {
         flex-direction: column;

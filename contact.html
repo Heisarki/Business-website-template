@@ -5,29 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="myscripts.js"></script>
-
+    
     <title>Contact Us</title>
 </head>
 <body>
-        <!-- Header -->
+    <!-- Header -->
     <div class="fixed">
-            <!-- socail Media link -->
-            <div class="top">
+        <!-- socail Media link -->
+        <div class="top">
+            <a href="#">
                 <img src="/images/icons/facebook.svg" alt="f"/>
+            </a>
+            <a href="#">
                 <img src="/images/icons/twitter.svg" alt="t"/>
+            </a>
+            <a href="#">
                 <img src="/images/icons/linkedin.svg" alt="l"/>
+            </a>
+        </div>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/index.html"><h1>localHost</h1></a>
             </div>
-            <div class="header-container">
-                <div class="logo">
-                    <a href="/index.html"><h1>localHost</h1></a>
-                </div>
-                <ul class="nav-link">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
-                </ul>
+            <ul class="nav-link">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+            <!-- Mobile View -->
+            <div class="mobile">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>                     
             </div>
+            <div class="x-button">
+                +
+            </div>
+        </div>
     </div>
+    
+    <!-- Contact Form -->
     <main class="form-container">
         <form>
             <div class="contact-form">
@@ -45,35 +61,36 @@
             <button>Submit</button>
         </form>
     </main>
-        <!-- Footer -->
-        <div class="footer-container">
-            <div class="about-us">
-                <h2>About us</h2>
-                <p2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus adipisci voluptas, beatae incidunt excepturi praesentium fugit a ut exercitationem non?</p2>
-            </div>
-            <div class="recent-posts">
-                <h2>Recent Posts</h2>
-                <a href="#">
-                    <p2>How to learn HTML</p2>
-                    <p2>November 22, 2022</p2>
-                </a>
-                <a href="#">
-                    <p2>Tips to improve your coding skills</p2>
-                    <p2>November 22, 2022</p2>
-                </a>
-            </div>
-            <div class="subscribe-form">
-                <p2>Subscribe to our email newsletter</p2>
-                <div class="email-input">
-                    <input type="email" placeholder="Enter your e-mail address"/>
-                    <button>Subscribe</button>
-                </div>
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="about-us">
+            <h1>About us</h1>
+            <p2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus adipisci voluptas, beatae incidunt excepturi praesentium fugit a ut exercitationem non?</p2>
+        </div>
+        <div class="recent-posts">
+            <h1>Recent Posts</h1>
+            <a href="#">
+                <p2>How to learn HTML</p2>
+            </a>
+            <p2>January 29, 2023</p2>
+            <a href="#">
+                <p2>Tips to improve your coding skills</p2>
+            </a>
+            <p2>November 22, 2022</p2>
+        </div>
+        <div class="subscribe-form">
+            <p2>Subscribe to our email newsletter</p2>
+            <div class="email-input">
+                <input type="email" placeholder="Enter your e-mail address"/>
+                <button>Subscribe</button>
             </div>
         </div>
+    </div>
     
-        <div class="copyright">
-            <p>@copyright</p>
-            <p>-- developed by Heisarki</p>
-        </div>
+    <div class="copyright">
+        <p>@copyright</p>
+        <p>-- developed by Heisarki</p>
+    </div>
 </body>
+<script src="main.js"></script>
 </html>
