@@ -90,7 +90,10 @@ p2 {
 }
 
 .nav-link a {
-    margin: 10px;
+    display: flex;
+    width: 100vw;
+    padding: 5px;
+    /* background-color: green; */
     /* color:rgb(153, 153, 153); */
     color: black;
 }
