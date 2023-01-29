@@ -279,7 +279,7 @@ p2 {
 .review-list {
     width: 60vw;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     /* background-color: blue; */
 }
 .width {
